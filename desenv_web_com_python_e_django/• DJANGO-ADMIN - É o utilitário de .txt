@@ -1,0 +1,19 @@
+• DJANGO-ADMIN - É o utilitário de linha de comando do Django para tarefas administrativas;
+
+• MANAGE - É um wrapper em volta do djanfo-admin.py. Ele delega tarefas para o django-admin.py. Responsável por colocar o pacote do projeto no sys.path.
+Ele define a variável de ambiente DJANGO_SETTINGS_MUDULE que então aponta para o arquivo settings.py.
+Por isso, o manage.py é gerado automaticamente junto ao projeto, para facilitar o uso de comandos django-admin.py (comandos administrativos);
+
+• WSGI - Web Server Gatway Interface - Interface de porta de entrada do servidor web. O django com o comando start project inicia uma configuração WSGI padrão para que se possa executar sua aplicação web.
+• SETTINGS - É responsável pelas configurações do Django. Nele é possível configurar po exemplo apps, conexão com banco de dadeos, templates, time zone, cache, segurança, arquivos estáticos, etc.
+
+• URLS - É um Schema de URL. Responsável por gerenciar as rotas da URLs, onde é possível configurar pra onde cada rota será executada. É uma forma limpa e elegante para gerenciar URLs.
+
+• VIEWS - É responsável por processar e retornar uma resposta para o cliente que faz a requisição.
+
+• MODELS - Define o modelo de dados inteiramente em Python. Fa a abstração dos objetos de banco de para o Python, transformando todas as tabelas em classes e os acessos são feitos utilizando linguagem Python, onde o Django realiza a transformação para SQL.
+• ADMIN - Interface administratica gerada automaticamente pelo Django. Ele lê os metadados que estão nos models e fornece uma interface poderosa e pronta para manipulação dos dados.
+
+• STATIC - Responsável por armazenar os arquivos estáticos. CSS, JavaScript, imagens.
+
+• TEMPLATES - Responsável por armazenar os arquivos HTML. O diretório templates é o diretório padrão para armazenar todo o conteúdo HTML da nossa aplicação.
